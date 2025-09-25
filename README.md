@@ -22,18 +22,22 @@ concluídas, sendo ideal para praticar estruturas de dados e funções.
    ```
 
 2. **Navegue até a pasta:**
-   ´´´bash
+
+   ```bash
+
    cd python-todo-list
 
-   ´´´
+   ```
 
 3. **python main.py:**
-   ´´´bash
+
+   ```bash
+
    python main.py
 
-   ´´´
 
    ## 🛠️ Tecnologias
+   ```
 
 - **Linguagem:** Python 3.x
 - **Conceitos Chave:** Funções, Estruturas de Dados (Lista e Dicionário), Laços de Repetição (`while`, `for`) e Módulos.
