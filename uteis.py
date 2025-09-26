@@ -2,15 +2,18 @@ import sys
 
 
 def titulo(msg):
+    """Retorna o título formatado em maiúsculas e com sinais de igual ao redor."""
     msg = f"======={msg}=====".upper()
     return msg
 
 
 def linhas():
+    """Retorna uma linha de separação."""
     return "-" * 20
 
 
 def add_tarefa(lista_de_tarefa):
+    """Adiciona uma nova tarefa à lista de tarefas."""
     descricao = input("Entre com sua tarefa: ")
     if descricao.strip() != "":
         nova_tarefa = {"descrição": descricao, "status": False}
@@ -40,6 +43,7 @@ def visualisar_tarefas(lista_de_tarefa):
 
 
 def marcar_como_lida(lista_de_tarefa):
+    """Marca uma tarefa como lida na lista de tarefas."""
     if len(lista_de_tarefa) == 0:
         return "Não há tarefas"
 
@@ -79,6 +83,7 @@ def marcar_como_lida(lista_de_tarefa):
 
 
 def sair():
+    """Sai do programa."""
     print("Saindo do programa...")
     sys.exit()
     pass

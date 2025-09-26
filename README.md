@@ -1,43 +1,39 @@
-# 📝 To-Do List Simples com Python
+# 📝 To-Do List em Python
 
-Este é um projeto simples de gerenciamento de lista de tarefas desenvolvido em Python.
-Ele utiliza listas e dicionários para armazenar, visualizar e marcar tarefas como
-concluídas, sendo ideal para praticar estruturas de dados e funções.
+Este projeto é um gerenciador simples de tarefas (to-do list) feito em Python, ideal para praticar lógica de programação, funções e manipulação de listas e dicionários.
 
 ## 🚀 Funcionalidades
 
-- Adicionar novas tarefas à lista.
-- Visualizar todas as tarefas (indicando o índice).
-- Marcar uma tarefa existente como concluída (`[X]`).
-- Sair do programa.
+- Adicionar novas tarefas à lista
+- Visualizar todas as tarefas numeradas
+- Marcar tarefas como concluídas (exibindo `[x]` ao lado)
+- Apagar tarefas
+- Sair do programa
 
 ## 💻 Como Executar
 
 1. **Clone o repositório:**
 
    ```bash
-   git clone [https://github.com/SeuUsuario/python-todo-list.git](https://github.com/SeuUsuario/python-todo-list.git)
-
-
+   git clone https://github.com/CelsodvJunior/python-todo-list.git
    ```
 
-2. **Navegue até a pasta:**
+2. **Navegue até a pasta do projeto:**
 
    ```bash
-
    cd python-todo-list
-
    ```
 
-3. **python main.py:**
-
+3. **Execute o programa principal:**
    ```bash
-
    python main.py
-
-
-   ## 🛠️ Tecnologias
    ```
+
+## 🛠️ Tecnologias Utilizadas
 
 - **Linguagem:** Python 3.x
-- **Conceitos Chave:** Funções, Estruturas de Dados (Lista e Dicionário), Laços de Repetição (`while`, `for`) e Módulos.
+- **Conceitos:** Funções, listas, dicionários, laços de repetição (`while`, `for`), módulos
+
+## 📄 Sobre
+
+O projeto foi desenvolvido para fins de estudo e prática de programação. Sinta-se à vontade para contribuir ou adaptar conforme sua necessidade!
