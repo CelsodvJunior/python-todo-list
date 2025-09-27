@@ -101,10 +101,3 @@ def marcar_como_lida(lista_de_tarefa):
         return f'Tarefa "{lista_de_tarefa[opcao - 1]["descrição"]}" marcada como concluída.'
     else:
         return "Opção inválida."
-
-
-def sair():
-    """Sai do programa."""
-    print("Saindo do programa...")
-    sys.exit()
-    pass

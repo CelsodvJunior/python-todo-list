@@ -6,5 +6,9 @@
     {
         "descri\u00e7\u00e3o": "Segunda tarefa",
         "status": false
+    },
+    {
+        "descri\u00e7\u00e3o": "Teste do while",
+        "status": false
     }
 ]

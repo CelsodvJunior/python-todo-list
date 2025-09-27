@@ -3,7 +3,7 @@ import uteis
 lista_de_tarefas = uteis.carregar_tarefas()
 print(uteis.titulo("To-Do List").upper)
 opcao = 0
-while opcao != 5:
+while True:
     print(
         """
     Escolha uma opção:
@@ -32,8 +32,7 @@ while opcao != 5:
         print(uteis.marcar_como_lida(lista_de_tarefas))
         print(uteis.linhas())
     elif opcao == 4:
-        print(uteis.linhas())
-        print(uteis.sair())
-        print(uteis.linhas())
+        print("Sandio do programa...")
+        break
     else:
         print("Opção inválida...")
