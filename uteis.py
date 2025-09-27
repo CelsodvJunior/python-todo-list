@@ -1,4 +1,5 @@
-import sys
+import json
+import os
 
 
 def titulo(msg):
@@ -12,6 +13,24 @@ def linhas():
     return "-" * 20
 
 
+arquivo_json = "tarefas.json"
+
+
+def carregar_tarefas():
+    try:
+        if not os.path.exists(arquivo_json):
+            return []
+        with open(arquivo_json, "r") as tarefas:
+            return json.load(tarefas)
+    except FileNotFoundError as error:
+        return f"Arquivo não encontrado! Error: {error}"
+
+
+def salvar_tarefas(lista_de_tarefa):
+    with open(arquivo_json, "w") as tarefas:
+        json.dump(lista_de_tarefa, tarefas, indent=4)
+
+
 def add_tarefa(lista_de_tarefa):
     """Adiciona uma nova tarefa à lista de tarefas."""
     descricao = input("Entre com sua tarefa: ")
@@ -21,6 +40,8 @@ def add_tarefa(lista_de_tarefa):
         msg = "Tarefa adicionada com sucesso!!!"
     else:
         msg = "O campo de tarefa não pode ser vazio..."
+
+    salvar_tarefas(lista_de_tarefa)
 
     return msg
 

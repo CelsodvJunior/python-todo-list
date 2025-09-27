@@ -1,6 +1,6 @@
 import uteis
 
-lista_de_tarefas = []
+lista_de_tarefas = uteis.carregar_tarefas()
 print(uteis.titulo("To-Do List").upper)
 opcao = 0
 while opcao != 5:
@@ -17,7 +17,9 @@ while opcao != 5:
 
     if opcao == 1:
         print(uteis.linhas())
-        print(uteis.add_tarefa(lista_de_tarefas))
+        msg = uteis.add_tarefa(lista_de_tarefas)
+        uteis.salvar_tarefas(lista_de_tarefas)
+        print(msg)
         print(uteis.linhas())
 
     elif opcao == 2:
